@@ -3,8 +3,8 @@ const app = express();
 const http = require('http').Server(app);
 const path = require('path');
 
-const chatServer = require('./lib/chatServer');
-chatServer.listen(http);
+// const chatServer = require('./lib/chatServer');
+// chatServer.listen(http);
 
 const PORT = 8000;
 
@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 });
 
 http.listen(PORT, () => {
-  console.log(`listening on ${PORT}`);
+  console.log(`Listening on ${PORT}`);
 });
